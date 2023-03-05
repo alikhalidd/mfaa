@@ -57,7 +57,7 @@ a {
   display: flex;
   height: 6rem;
   width: 100%;
-  justify-content: space-around;
+  justify-content: end;
   align-items: center;
   color: white;
   transition: all 0.3s ease-in-out;
@@ -65,6 +65,7 @@ a {
 
 #logo {
   z-index: 2;
+  margin-right: 7%;
 }
 
 .img-logo {
@@ -79,12 +80,12 @@ a {
   display: flex;
   transition: all 0.2s ease-in-out;
   gap: 2.5rem;
-
+  margin-right: 10%;
 
   a {
     transition: all 0.2s ease-in-out;
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: rgb(208, 179, 132);
 
     &:hover {
@@ -163,6 +164,7 @@ header {
 .social-media i {
   margin-left: 1rem;
   margin-right: 1rem;
+  font-size: 1.3rem;
   color: rgb(208, 179, 132);
   cursor: pointer;
   transition: 0.3s;
@@ -256,7 +258,7 @@ header {
 }
 
 #about {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -264,8 +266,8 @@ header {
   text-align: right;
 
   .txt-about-cont {
-    width: 60%;
-    margin: 3rem;
+    width: 50%;
+    margin-right: 3rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -278,7 +280,7 @@ header {
       justify-self: right;
       align-self: flex-end;
       font-size: 4rem;
-      margin: 2.5rem;
+      margin-bottom: 1rem;
       color: rgb(208, 179, 132);
 
       span {
@@ -294,26 +296,26 @@ header {
 
   .img-about-cont {
     width: 50%;
-    margin: 1rem;
+    // margin: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 }
 
 .img1 {
   height: 13rem;
-  width: 17rem;
-  border-radius: 20px;
+  width: 15rem;
+  border-radius: 10px;
   background: url(/images/About-01.jpg)no-repeat center center/cover;
 }
 
 .img2 {
   height: 13rem;
-  width: 17rem;
-  border-radius: 20px;
+  width: 15rem;
+  border-radius: 10px;
   background: url(/images/About-02.jpg)no-repeat center center/cover;
 }
 
@@ -395,32 +397,33 @@ header {
 }
 
 .txt-cont-makkah {
-  margin: 3rem;
+  margin: 2rem;
   line-height: 1.5rem;
 
   h1 {
     color: rgb(208, 179, 132);
-    margin: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
     font-size: 2rem;
   }
 }
 
 .img1-makkah {
   background: url(/images/No-01.svg)no-repeat center center/cover;
-  height: 7rem;
-  width: 9rem;
+  height: 8rem;
+  width: 11rem;
 }
 
 .img2-makkah {
   background: url(/images/No-02.svg)no-repeat center center/cover;
-  height: 7rem;
-  width: 9rem;
+  height: 8rem;
+  width: 10rem;
 }
 
 .img3-makkah {
   background: url(/images/No-03.svg)no-repeat center center/cover;
-  height: 7rem;
-  width: 9rem;
+  height: 8rem;
+  width: 10rem;
 }
 
 .img-cont-makkah {
@@ -457,12 +460,15 @@ header {
 
 .new-info {
   text-align: right;
-  width: 60%;
+  width: 45%;
+  position: absolute;
+  right: 40%;
+  bottom: 60%;
 
   h1 {
-    margin: 1rem;
+    margin-bottom: 1rem;
     color: rgb(208, 179, 132);
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -477,13 +483,14 @@ header {
   z-index: 2;
 
   .info-item-cont {
-    margin: auto;
+    // margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: end;
     width: 100%;
-    align-items: center;
-
+    align-items: start;
+    margin-top: 3rem;
+    margin-left: 40%;
   }
 
   .info-item {
@@ -569,6 +576,10 @@ header {
   }
 }
 
+.img-slider {
+  margin-bottom: 1rem;
+}
+
 @media(max-width:1017px) {
   #contactt {
     font-size: 0.5rem;
@@ -582,6 +593,11 @@ header {
     display: none;
   }
 
+  .img-slider {
+    display: none;
+    height: 0;
+    width: 0;
+  }
 
 
   .info-item-sec-cont {
@@ -662,11 +678,19 @@ header {
 
   .txt-about-cont {
     font-size: 0.5rem;
+    line-height: 0;
+
+    h1 {
+      span {
+        font-size: 2rem;
+      }
+    }
   }
 
   .social-media i {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    font-size: 1rem;
   }
 
   .hamburger {
@@ -685,6 +709,12 @@ header {
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .nav-items {
     position: fixed;
     left: -100%;
@@ -695,6 +725,11 @@ header {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    margin-right: 0;
+  }
+
+  #logo {
+    margin-right: 0;
   }
 
   .nav-items a {
