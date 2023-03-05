@@ -54,9 +54,9 @@ let contact = document.querySelector('.contact');
 //     makkah.classList.add('active');
 //   }
 // });
-var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 800
-});
+// var scroll = new SmoothScroll('a[href*="#"]', {
+//   speed: 800
+// });
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-items');
 hamburger.addEventListener("click", () => {
