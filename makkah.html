@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/f5ce9aa6de.js" crossorigin="anonymous"></script>
 
@@ -14,11 +15,11 @@
 <body>
   <nav class="navbar" style="z-index: 999999;">
     <div class="nav-items regular">
-      <a href="/contact.html" class="nav-item contact">اتصل بنا</a>
-      <a href="#" class="nav-item makkah active">مكه و المدينة</a>
-      <a href="/vision.html" class="nav-item vision">الرؤيه</a>
-      <a href="/about.html" class="nav-item about">نحن ميفاء</a>
       <a href="/index.html" class="nav-item home">الرئيسيه</a>
+      <a href="/about.html" class="nav-item about">نحن ميفاء</a>
+      <a href="/vision.html" class="nav-item vision">الرؤيه</a>
+      <a href="#" class="nav-item makkah active">مكه و المدينة</a>
+      <a href="/contact.html" class="nav-item contact">اتصل بنا</a>
     </div>
     <div id="logo"><img class="img-logo" src="/images/M-Logo.svg"></div>
     <div class="hamburger">
@@ -28,14 +29,21 @@
     </div>
   </nav>
   <section id="makkah" style="height: 100vh; background: url(/images/Background.jpg)no-repeat center center/cover;">
+
     <div class="img-slider"
-      style="display: flex; justify-content: center;align-items: center; gap: 1.5rem; position: relative; top: 7%;">
-      <div class="img" style="background: url(/images/Pic-01.jpg); height: 11rem;width: 11rem;"></div>
-      <div class="img" style="background: url(/images/Pic-02.jpg); height: 11rem;width: 11rem;"></div>
-      <div class="img" style="background: url(/images/Pic-03.jpg);height: 11rem; width: 11rem;"></div>
-      <div class="img" style="background: url(/images/Pic-04.jpg);height: 11rem; width: 11rem;"></div>
-      <div class="img" style="background: url(/images/Pic-05.jpg);height: 11rem; width: 11rem;"></div>
-      <div class="img" style="background: url(/images/Pic-06.jpg);height: 11rem; width: 11rem;"></div>
+      style="display: flex; justify-content: center;align-items: center; gap: 1rem; position: relative; top: 7%;">
+      <div class="img img-1"
+        style="background: url(/images/Pic-01.jpg)no-repeat center center/cover; height: 11rem;width: 2rem;"></div>
+      <div class="img img-2"
+        style="background: url(/images/Pic-02.jpg) no-repeat center center/cover; height: 11rem;width: 2rem;"></div>
+      <div class="img img-3"
+        style="background: url(/images/Pic-03.jpg)no-repeat center center/cover;height: 11rem; width: 2rem;"></div>
+      <div class="img img-4"
+        style="background: url(/images/Pic-04.jpg)no-repeat center center/cover;height: 11rem; width: 2rem;"></div>
+      <div class="img img-5"
+        style="background: url(/images/Pic-05.jpg) no-repeat center center/cover;height: 11rem; width: 2rem;"></div>
+      <div class="img img-6"
+        style="background: url(/images/Pic-06.jpg) no-repeat center center/cover;height: 11rem; width: 2rem;"></div>
     </div>
     <div class="txt-cont-makkah light">
       <h1>حقائق</h1>
@@ -76,6 +84,7 @@
       </a>
     </div>
   </div>
+  <!-- <script src="js/swiper-bundle.min.js"></script> -->
   <script src="js/script.js"></script>
 </body>
 
