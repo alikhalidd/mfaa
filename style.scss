@@ -501,8 +501,9 @@ header {
     justify-content: start;
     align-items: center;
     text-align: left;
-    width: 45%;
+    // width: 45%;
     color: #505050;
+    font-family: Arial, sans-serif;
     position: relative;
     top: 3rem;
     margin-left: 1rem;
@@ -594,6 +595,20 @@ header {
 }
 
 @media(max-width:1017px) {
+  .input-contact {
+    position: relative;
+    bottom: 5rem;
+  }
+
+  .info-item-cont {
+    position: relative;
+    bottom: 1.5rem;
+  }
+
+  .new-info {
+    width: 80% !important;
+  }
+
   .img-head::before {
     background: url(/images/Homepage-1-M.png)no-repeat center center/cover !important;
   }
@@ -648,16 +663,14 @@ header {
   }
 
 
-  .info-item-sec-cont {
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-  }
-
   .info-item {
     font-size: 0.8rem;
   }
 
+  .inf-cont2 {
+    position: relative;
+    bottom: 1.5rem;
+  }
 
 
   .img1-makkah {
@@ -746,12 +759,6 @@ header {
     width: 27% !important;
   }
 
-  .input-contact {
-    // display: none;
-    // height: 0;
-    // width: 0;
-
-  }
 
   #contactt {
     display: flex;
@@ -773,6 +780,8 @@ header {
     }
 
     .info-item {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
       // flex-direction: column;
       text-align: center;
       margin: auto;
